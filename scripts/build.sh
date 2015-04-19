@@ -7,8 +7,8 @@ echo ${GIT_BRANCH} > .branchname
 #...
 
 #generate artifacts
-composer.phar self-update
-composer.phar update
+composer self-update
+composer update
 
 #phpunit
 #bower update
