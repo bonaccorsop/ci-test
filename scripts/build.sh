@@ -10,6 +10,6 @@ echo ${GIT_BRANCH} > .branchname
 composer.phar self-update
 composer.phar update
 
-phpunit
+#phpunit
 #bower update
 #sass --update public/assets/stylesheets:public/assets/css/styles --style compressed
