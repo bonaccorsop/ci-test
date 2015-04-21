@@ -3,7 +3,9 @@
 echo "deploy to production...";
 
 #copy artifacts in new folder on server
-scp -r ./ vagrant@192.168.56.145:/var/www/prod
+#scp -r ./ vagrant@192.168.56.145:/var/www/prod
+
+rsync -av --exclude '.git' vagrant@192.168.56.145:/var/www/prod
 
 #switch directory
 ssh root@nightly-api.crevity.com '

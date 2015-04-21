@@ -3,7 +3,8 @@
 echo "deploy to staging...";
 
 #copy artifacts in new folder on server
-scp -r ./ vagrant@192.168.56.145:/var/www/stage
+rsync -av --exclude '.git' vagrant@192.168.56.145:/var/www/stage
+#scp -r ./ vagrant@192.168.56.145:/var/www/stage
 
 #switch directory
 ssh root@nightly-api.crevity.com '
