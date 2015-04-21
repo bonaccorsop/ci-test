@@ -3,11 +3,7 @@
 #save the branch into file for post build check
 echo ${GIT_BRANCH} > .branchname
 
-#clone database from production
-#...
-
 #generate artifacts
-composer self-update
 composer update
 
 #phpunit

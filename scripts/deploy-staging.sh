@@ -14,6 +14,6 @@ ssh root@nightly-api.crevity.com '
     rm -R /var/www/stage-old;'
 
 #migrate db
-ssh vagrant@192.168.56.145 'php /var/www/stage/artisan migrate'
+ssh vagrant@192.168.56.145 'php /var/www/stage/artisan migrate --force'
 
 echo "done";
